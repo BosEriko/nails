@@ -3,7 +3,9 @@ Rails Inspired NextJS Template.
 
 ## Generate a Nails Project
 ```sh
-npx create-nails-app my-nails-app
+npm create nails my-nails-app
+# or with yarn
+yarn create nails my-nails-app
 ```
 
 ## Run Project Locally
