@@ -1,16 +1,9 @@
-import Image from "next/image";
+import Atom from "@atom";
 
 const Header = () => {
   return (
     <header>
-      <Image
-        className="dark:invert"
-        src="/next.svg"
-        alt="Next.js logo"
-        width={100}
-        height={20}
-        priority
-      />
+      <Atom.Logo />
     </header>
   );
 };
