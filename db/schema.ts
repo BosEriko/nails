@@ -7,4 +7,3 @@ const FirebaseTimestamp = z.union([
   z.date(),
   z.custom((val) => val === FirebaseAdmin.firestore.FieldValue.serverTimestamp(), { message: "Expected serverTimestamp()" }),
 ]);
-
