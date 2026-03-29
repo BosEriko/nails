@@ -43,8 +43,7 @@ fs.mkdirSync(dbDir, { recursive: true });
 const schemaFilePath = path.join(dbDir, "schema.ts");
 
 // Make sure db/schema.ts exists
-const schemaContent = `
-import FirebaseAdmin from "@lib/FirebaseAdmin";
+const schemaContent = `import FirebaseAdmin from "@lib/FirebaseAdmin";
 import { z } from "zod";
 
 // Helper Function
