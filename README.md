@@ -3,7 +3,7 @@ Rails Inspired NextJS Template.
 
 ## Generate a Nails Project
 ```sh
-npx degit BosEriko/nails my-nails-app
+npx create-nails-app my-nails-app
 ```
 
 ## Run Project Locally
