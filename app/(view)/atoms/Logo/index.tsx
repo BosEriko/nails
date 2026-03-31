@@ -1,15 +1,6 @@
-import Image from "next/image";
-
 const Logo = () => {
   return (
-    <Image
-      className="dark:invert"
-      src="/next.svg"
-      alt="Next.js logo"
-      width={100}
-      height={20}
-      priority
-    />
+    <div className="font-bold text-4xl">NailsJS</div>
   );
 };
 
