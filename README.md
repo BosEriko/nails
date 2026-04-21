@@ -33,5 +33,9 @@ You can generate a new scaffold using the command below:
 yarn nails generate scaffold UserActivity
 ```
 
-## Scoping Projects
-There may be times where you want to use the same Firebase project on different Nails repository. This is where `COLLECTION_SCOPE` can come in handy. You can set up `COLLECTION_SCOPE` on your `.env` and Nails is smart enough to detect if it exists and if it does, it will prepend all collection names on Firestore with `COLLECTION_SCOPE`. For Example `UserActivity`, on Firestore instead of `userActivities`, if `COLLECTION_SCOPE` is set to `list`, it will be named `list__userActivities` on Firestore.
+## Collection Scope
+There may be situations where you need to use the same Firebase project across multiple Nails repositories. In these cases, `COLLECTION_SCOPE` can be useful.
+
+By setting `COLLECTION_SCOPE` in your `.env.local` file, Nails will automatically detect it and prefix all Firestore collection names with its value.
+
+For example, if you have a collection named `UserActivity`, it would normally map to `userActivities` in Firestore. However, if `COLLECTION_SCOPE` is set to `list`, the resulting collection name will become `list__userActivities`.
